@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import com.viewfunction.infoDiscoverSystemAdminApplication.util.SpringRuntimeEnvironmentHandler;
 
 public class PropertyHandler {
 	private static Properties _properties;		
@@ -18,7 +19,7 @@ public class PropertyHandler {
 	public static String getPropertyValue(String resourceFileName){
 		_properties=new Properties();
 		try {
-			_properties.load(new FileInputStream(RuntimeEnvironmentHandler.getApplicationRootPath()+"InfoDiscoverEngineCfg.properties"));
+			_properties.load(new FileInputStream(SpringRuntimeEnvironmentHandler.getApplicationRootPath()+"/config/InfoDiscoverEngineCfg.properties"));
 		} catch (FileNotFoundException e) {
 
 		} catch (IOException e) {

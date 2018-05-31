@@ -47,9 +47,6 @@
 			<scope>test</scope>
 		</dependency>
 
-
-
-
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-servlet-api</artifactId>
@@ -67,11 +64,6 @@
             <artifactId>vaadin-slf4j-jdk14</artifactId>
             <version>1.6.1</version>
         </dependency>
-
-
-
-
-
 
         <dependency>
             <groupId>com.vaadin.external.atmosphere</groupId>
@@ -129,9 +121,6 @@
             <scope>provided</scope>
         </dependency>
 
-
-
-
         <!-- drools -->
         <dependency>
             <groupId>org.kie</groupId>
@@ -154,11 +143,6 @@
             <artifactId>jbpm-test</artifactId>
             <version>${runtime.version}</version>
         </dependency>
-
-
-
-
-
 
 	</dependencies>
 

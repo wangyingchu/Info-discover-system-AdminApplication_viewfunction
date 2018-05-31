@@ -14,7 +14,7 @@ public class ApplicationLauncherUtil {
         if(_applicationInfoProperties==null){
             _applicationInfoProperties=new Properties();
             try {
-                _applicationInfoProperties.load(new FileInputStream(RuntimeEnvironmentHandler.getApplicationRootPath()+"/appConfig/applicationInfo.properties"));
+                _applicationInfoProperties.load(new FileInputStream(SpringRuntimeEnvironmentHandler.getApplicationRootPath()+"/appConfig/applicationInfo.properties"));
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
